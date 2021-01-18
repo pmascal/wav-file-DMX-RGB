@@ -59,9 +59,9 @@ we are looking for. Considering this, the returned value of
 np.where needs to be modified to extract the single integer value.
 -----> c = b[0][0]
 
-This index value is then used to return its sister element in the
-initially created light_vals list.
------> self.light_vals(c)
+This index value is then used to return the correct row in the frame
+data 2-D array.
+-----> self.frame_data(c)
 
 If the given time does not fit into the times matrix, return 0.
 
